@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "scene.bin",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
