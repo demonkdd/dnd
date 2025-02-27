@@ -27,24 +27,35 @@ struct Skills: View {
     @State private var Survival = ""
     
     var body: some View {
-        TextField("Acrobatics", text: $Acrobatics)
-        TextField("Animal Handling", text: $AnimalHandling)
-        TextField("Arcana", text: $Arcana)
-        TextField("Athletics", text: $Athletics)
-        TextField("Deception", text: $Deception)
-        TextField("History", text: $History)
-        TextField("Insight", text: $Insight)
-        TextField("Intimidation", text: $Intimidation)
-        TextField("Investigation", text: $Investigation)
-        TextField("Medicine", text: $Medicine)
-        TextField("Nature", text: $Nature)
-        TextField("Perception", text: $Perception)
-        TextField("Performance", text: $Performance)
-        TextField("Persuasion", text: $Perception)
-        TextField("Religion", text: $Religion)
-        TextField("Sleight of Hand", text: $SleightOfHand)
-        TextField("Stealth", text: $Stealth)
-        TextField("Survival", text: $Survival)
+        VStack {
+            HStack {
+                Form {
+                    Section(header: Text("Skills")) {
+                        TextField("Acrobatics", text: $Acrobatics)
+                        TextField("Animal Handling", text:$AnimalHandling)
+                        TextField("Arcana", text: $Arcana)
+                        TextField("Athletics", text: $Athletics)
+                        TextField("Deception", text: $Deception)
+                        TextField("History", text: $History)
+                        TextField("Insight", text: $Insight)
+                        TextField("Intimidation", text: $Intimidation)
+                    }
+                    Section(header: Text("Skills")) {
+                        
+                        TextField("Investigation", text: $Investigation)
+                        TextField("Medicine", text: $Medicine)
+                        TextField("Nature", text: $Nature)
+                        TextField("Perception", text: $Perception)
+                        TextField("Performance", text: $Performance)
+                        TextField("Persuasion", text: $Perception)
+                        TextField("Religion", text: $Religion)
+                        TextField("Sleight of Hand", text: $SleightOfHand)
+                        TextField("Stealth", text: $Stealth)
+                        TextField("Survival", text: $Survival)
+                    }
+                }
+            }
+        }
     }
 }
 
