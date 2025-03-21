@@ -59,7 +59,7 @@ struct ContentView: View {
             
             
             VStack (alignment: .leading) {
-                // need 4 d6 d6 is also used for damage and rolling for skills need to be able to store 6d roll for giant rolls
+                    // need 4 d6 d6 is also used for damage and rolling for skills need to be able to store 6d roll for giant rolls
                 //text
                 SceneView(scene: SCNScene(named:
                                             "D20_Dice_W20_Würfel_3D_model_FREE.scn"),
