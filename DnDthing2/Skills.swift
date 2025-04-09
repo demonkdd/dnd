@@ -29,29 +29,60 @@ struct Skills: View {
     var body: some View {
         VStack {
             HStack {
-                Form {
-                    Section(header: Text("Skills")) {
+                Grid {
+                    GridRow{
                         TextField("Acrobatics", text: $Acrobatics)
+                            .vibrantCard()
                         TextField("Animal Handling", text:$AnimalHandling)
-                        TextField("Arcana", text: $Arcana)
-                        TextField("Athletics", text: $Athletics)
-                        TextField("Deception", text: $Deception)
-                        TextField("History", text: $History)
-                        TextField("Insight", text: $Insight)
-                        TextField("Intimidation", text: $Intimidation)
+                            .vibrantCard()
                     }
-                    Section(header: Text("Skills")) {
-                        
+                    GridRow {
+                        TextField("Arcana", text: $Arcana)
+                            .vibrantCard()
+                        TextField("Athletics", text: $Athletics)
+                            .vibrantCard()
+                    }
+                    GridRow {
+                        TextField("Deception", text: $Deception)
+                            .vibrantCard()
+                        TextField("History", text: $History)
+                            .vibrantCard()
+                    }
+                    GridRow {
+                        TextField("Insight", text: $Insight)
+                            .vibrantCard()
+                        TextField("Intimidation", text: $Intimidation)
+                            .vibrantCard()
+                    }
+                    GridRow {
                         TextField("Investigation", text: $Investigation)
+                            .vibrantCard()
                         TextField("Medicine", text: $Medicine)
+                            .vibrantCard()
+                    }
+                    GridRow {
                         TextField("Nature", text: $Nature)
+                            .vibrantCard()
                         TextField("Perception", text: $Perception)
+                            .vibrantCard()
+                    }
+                    GridRow {
                         TextField("Performance", text: $Performance)
+                            .vibrantCard()
                         TextField("Persuasion", text: $Perception)
+                            .vibrantCard()
+                    }
+                    GridRow {
                         TextField("Religion", text: $Religion)
+                            .vibrantCard()
                         TextField("Sleight of Hand", text: $SleightOfHand)
+                            .vibrantCard()
+                    }
+                    GridRow {
                         TextField("Stealth", text: $Stealth)
+                            .vibrantCard()
                         TextField("Survival", text: $Survival)
+                            .vibrantCard()
                     }
                 }
             }
