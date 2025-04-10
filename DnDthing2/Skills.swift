@@ -5,6 +5,7 @@
 //  Created by Cameron Slaughter on 12/5/24.
 //
 import SwiftUI
+import SwiftData
 
 struct Skills: View {
     @State private var Acrobatics = ""

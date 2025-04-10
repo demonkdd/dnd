@@ -8,6 +8,8 @@
 import SwiftUI
 import SplineRuntime
 import SceneKit
+import SwiftData
+
 
 struct VibarantCardModifier: ViewModifier {
     func body(content: Content) -> some View {
@@ -27,6 +29,9 @@ extension View {
 }
 
 struct ContentView: View {
+    @Environment(\.modelContext) private var context
+    
+    //var saveManager = saveManager()
     
     
     @State private var CharacterName = ""
@@ -145,6 +150,9 @@ struct ContentView: View {
                             }
                             
                         }
+//                        Button("Save Character") {
+//                            try? saveManager.save(context: context)
+//                        }
                         HStack {
                             GridRow {
                                 NavigationLink(destination: Skills()) { Text("Skills")
